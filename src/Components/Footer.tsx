@@ -16,6 +16,7 @@ export default function Footer() {
                     <h1 className="font-serif text-xl sm:text-4xl md:text-6xl">
                         Thoughtful
                         <span className="italic opacity-50"> Engineering. </span>
+                        <br />
                         Intentional
                         <span className="italic opacity-50"> Design.</span>
                     </h1>
