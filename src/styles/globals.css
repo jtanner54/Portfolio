@@ -14,7 +14,7 @@
 
 /*VERY IMPORTANT: DOESN'T HAVE EXTRA SPACE ON MOBILE*/
 html, body {
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 @media (prefers-color-scheme: dark) {
