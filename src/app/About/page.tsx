@@ -6,8 +6,8 @@ export default function Page() {
     return (
         <div>
             <section className="relative w-full h-[110.5vh]">
-                <div className="absolute inset-0 h-210 w-full dark:bg-black bg-[linear-gradient(to_right,#73737350_1px,transparent_1px),linear-gradient(to_bottom,#73737350_1px,transparent_1px)] bg-size-[40px_40px]">
-                    <div className="overflow-hidden absolute inset-0 bg-radial-[at_50%_40%] from-gray to-black to-75%" />
+                <div className="absolute inset-0 h-210 w-full dark:bg-black bg-[linear-gradient(to_right,#dddddd_1px,transparent_1px),linear-gradient(to_bottom,#dddddd_1px,transparent_1px)] bg-size-[50px_50px]">
+                    <div className="overflow-hidden absolute inset-0 bg-radial-[at_50%_50%] from-transparent to-black to-60%" />
                 </div>
 
                 <div className="flex flex-col items-center justify-center w-full pt-40 dark:bg-white">
