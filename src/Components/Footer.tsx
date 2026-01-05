@@ -4,11 +4,11 @@ import Time from "./Time";
 
 export default function Footer() {
     return (
-        <footer className="dark:bg-black py-50 px-10 sm:px-50">
+        <footer className="flex flex-col items-start dark:bg-black py-50 px-10 sm:px-50">
             <div className="w-full h-px border-t border-white/10" />
 
             <div className="text-center pb-10 flex justify-center">
-                <h1 className="pt-8 lg:text-9xl md:text-7xl sm:text-6xl text-5xl font-serif text-white/8 uppercase">Codecrafted</h1>
+                <h1 className="pt-8 lg:text-9xl md:text-6xl sm:text-6xl text-5xl font-serif text-white/8 uppercase">Codecrafted</h1>
             </div>
             <div className="flex flex-col md:flex-row gap-10 justify-between items-center">
                 <div className="max-w-4xl">
