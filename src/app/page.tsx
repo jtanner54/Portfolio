@@ -107,7 +107,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="dark:bg-black py-40 mt-20 px-5 pt-59 md:pt-2">
+            <section className="dark:bg-black py-40 px-5 pt-59 md:pt-2">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-20 items-start px-6 max-w-6xl mx-auto">
                     <div className="md:col-span-7">
                         <p className="pl-1.5 pb-9 font-serif text-orange-400 uppercase tracking-widest">01 — Biography</p>
