@@ -2,7 +2,7 @@ function Lines({filled}: {filled: number}) {
     return (
         <div className="flex gap-2 ">
             {Array.from({length: 5}).map((_, i) => {
-                return ((5 - (filled) > 0) && ((i + 1) > filled)) ? <div key={i} className="bg-transparent border border-orange-400 rounded-full w-5 h-2" /> : <div key={i} className="bg-orange-400 border border-orange-400 rounded-full w-5 h-2" />
+                return ((5 - (filled) > 0) && ((i + 1) > filled)) ? <div key={i} className="bg-transparent border border-orange-400 rounded-full w-[22.5px] h-[10px]" /> : <div key={i} className="bg-orange-400 border border-orange-400 rounded-full w-[25px] h-[10px]" />
             })}
         </div>
     );
