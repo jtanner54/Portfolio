@@ -165,7 +165,7 @@ export default function Page() {
                     )}
                 </div>
 
-                <div className="flex flex-col items-center pt-5">
+                <div className="flex flex-col items-center p-5">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
                         {visibleTech.map(tech => (
                             <TechGroup key={tech.name} {...tech} />
