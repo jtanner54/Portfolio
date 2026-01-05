@@ -12,7 +12,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
+/*VERY IMPORTANT: DOESN'T HAVE EXTRA SPACE ON MOBILE*/
+html, body {
+  overflow-x: hidden;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
