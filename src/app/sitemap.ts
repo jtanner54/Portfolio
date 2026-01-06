@@ -1,25 +1,28 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://jacktanner.dev';
-  
+  const baseUrl = "https://jacktanner.dev";
+  const lastModified = new Date("2026-01-06"); // fixed date for static export
+
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      lastModified,
+      changeFrequency: "monthly",
       priority: 1,
     },
     {
       url: `${baseUrl}/About`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      lastModified,
+      changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/Tech`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      lastModified,
+      changeFrequency: "monthly",
       priority: 0.8,
     },
   ];
