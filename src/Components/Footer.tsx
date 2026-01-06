@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="text-center pb-10 flex justify-center">
                 <h1 className="pt-8 lg:text-9xl md:text-6xl sm:text-6xl text-3xl font-serif text-white/8 uppercase">Codecrafted</h1>
             </div>
-            <div className="flex flex-col md:flex-row gap-10 justify-between items-start">
+            <div className="flex flex-col md:flex-row gap-10 justify-between items-start w-full">
                 <div>
                     <p className="font-serif pb-10 text-orange-400 uppercase tracking-wider">Ready To Build?</p>
                     <h1 className="font-serif text-xl sm:text-4xl md:text-6xl">
@@ -21,7 +21,7 @@ export default function Footer() {
                         <span className="italic opacity-50"> Design.</span>
                     </h1>
                 </div>
-                <div className="flex flex-col mt-8 gap-3 pr-30">
+                <div className="flex flex-col mt-8 gap-3 items-end">
                     <div className="w-50 flex items-center text-center bg-white border rounded-full gap-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
                         <div>
                             <Link
@@ -35,7 +35,7 @@ export default function Footer() {
                             <FaLink color="white" className="size-4 m-2" />
                         </div>
                     </div>
-                    <div className="ml-3 flex gap-10 items-center">
+                    <div className="flex gap-10 items-center">
                         <Link className="flex gap-2" href="https://github.com/jtanner54" target="_blank">
                             <FaGithub color="gray" className="size-5" />
                             <span className="text-gray-500 font-serif uppercase">Github</span>
@@ -50,7 +50,7 @@ export default function Footer() {
 
             <div className="mt-25 pb-7 w-full h-px border-t border-white/10" />
 
-            <div className="flex flex-col sm:flex-row gap-5 items-start">
+            <div className="flex flex-col sm:flex-row gap-5 items-start w-full justify-between">
                 <div className="flex gap-20">
                     <div className="max-w-20">
                         <p className="font-serif italic text-white/50 text-xs">
@@ -68,7 +68,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex items-center gap-2 font-serif sm:ml-auto text-white/50">
+                <div className="flex items-center gap-2 font-serif text-white/50">
                     <FaRegCopyright className="size-3" /> 2025 Jack Tanner
                 </div>
             </div>
