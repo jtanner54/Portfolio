@@ -19,7 +19,7 @@ export default function TechGroup({ src, name, desc, level }: { src: string, nam
                     <Lines filled={level} />
                 </div>
             </div>
-            <div className="text-xl font-serif p-5"> 
+            <div className="text-xl font-serif pl-5 pb-2"> 
                 {desc}
             </div>
         </div>

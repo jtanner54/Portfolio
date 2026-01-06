@@ -3,10 +3,10 @@
 import clsx from 'clsx';
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
-import BoxesHome from "../Components/BoxesHome";
-import Timeline from "../Components/Timeline";
-import TechGroup from "../Components/Technologies";
-import ProjBox from '../Components/Projects';
+import BoxesHome from "../Components/Home/BoxesHome";
+import Timeline from "../Components/Home/Timeline";
+import TechGroup from "../Components/Home/Technologies";
+import ProjBox from '../Components/Home/Projects';
 import { useState } from "react";
 import { BiCodeAlt } from "react-icons/bi";
 import { IoSparklesOutline } from "react-icons/io5";
@@ -166,7 +166,7 @@ export default function Page() {
                 </div>
 
                 <div className="flex flex-col items-center p-5">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
+                    <div className="grid px-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
                         {visibleTech.map(tech => (
                             <TechGroup key={tech.name} {...tech} />
                         ))}

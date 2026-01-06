@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaLink, FaRegCopyright } from "react-icons/fa6";
-import Time from "./Time";
+import Time from "../Static/Time";
 
 export default function Footer() {
     return (
@@ -21,7 +21,7 @@ export default function Footer() {
                         <span className="italic opacity-50"> Design.</span>
                     </h1>
                 </div>
-                <div className="flex flex-col mt-8 gap-3 items-end">
+                <div className="flex flex-col mt-8 gap-3 ">
                     <div className="w-50 flex items-center text-center bg-white border rounded-full gap-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
                         <div>
                             <Link

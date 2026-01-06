@@ -1,6 +1,6 @@
 'use client'
 
-import Box from "@/src/Components/BoxesAbout";
+import Box from "@/src/Components/About/BoxesAbout";
 
 export default function Page() {
     return (
@@ -94,7 +94,7 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div className="grid grid-cols-1 items-center md:grid-cols-2 max-w-auto px-10 lg:grid-cols-3 gap-5">
                         <Box bg="#b91c1cD9" name="Silicon Valley" genre="sitcom | comedy" rating={8} />
                         <Box bg="#fed7aa80" name="The Office" genre="sitcom | comedy" rating={9} />
                         <Box bg="#ec4899ff" name="Fight Club" genre="thriller | action" rating={12} />

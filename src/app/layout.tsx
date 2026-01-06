@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import '@/src/styles/globals.css';
 import { geistSans } from '@/src/styles/fonts';
-import NavBar from '@/src/Components/NavBar';
-import Footer from '@/src/Components/Footer';
+import NavBar from '@/src/Components/Static/NavBar';
+import Footer from '@/src/Components/Static/Footer';
 
 export const metadata: Metadata = {
   title: {
