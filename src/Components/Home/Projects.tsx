@@ -30,7 +30,7 @@ export default function ProjBox(props: Props) {
                     </div>
 
                     <div className="flex flex-col transition duration-300 ease-in-out transform hover:translate-x-5 hover:scale-105">
-                        <div className="font-serif font-bold tracking-wider text-5xl">
+                        <div className="font-serif font-bold tracking-wider text-4xl">
                             {props.name}
                         </div>
                         <div className="opacity-50 font-serif tracking-wide uppercase">
