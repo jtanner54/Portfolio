@@ -23,7 +23,7 @@ export default function Page() {
 
     return (
         <div>
-            <section className="relative dark:bg-black">
+            <section className="relative dark:bg-black pt-16 sm:pt-0">
                 <div className="absolute inset-0 h-[75vh] w-full bg-[radial-gradient(circle,#dddddd_2px,transparent_1px)] bg-size-[30px_30px] sm:bg-size-[40px_40px]">
                     <div className="overflow-hidden absolute inset-0 bg-radial-[at_50%_50%] from-transparent to-black to-100%" />
                 </div>
@@ -127,14 +127,14 @@ export default function Page() {
                     </h2>
                 </div>
 
-                <div className="flex-col sm:flex-row text-center justify-center bg-white/5 border border-white/10 rounded-2xl mx-auto w-1/2">
+                <div className="flex flex-wrap justify-center gap-2 bg-white/5 border border-white/10 rounded-2xl mx-auto max-w-4xl px-4 py-3">
                     {techCategories.map((category) => (
                         <button
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             aria-pressed={activeCategory === category}
                             className={clsx(
-                                "p-3 m-3 text-2xl font-serif tracking-wider rounded-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105",
+                                "px-4 py-2 text-base sm:text-2xl font-serif tracking-wider rounded-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105",
                                 activeCategory === category
                                     ? "bg-linear-to-r from-orange-400 via-yellow-500 to-red-700"
                                     : "border-white/5 bg-white/5 text-white hover:bg-white/5"
