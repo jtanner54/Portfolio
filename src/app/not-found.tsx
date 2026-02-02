@@ -1,13 +1,21 @@
+'use client';
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function NotFound() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen dark:bg-black px-6">
-            <div className="absolute inset-0 h-screen w-full bg-[radial-gradient(circle,#dddddd_2px,transparent_1px)] bg-size-[30px_30px] sm:bg-size-[40px_40px]">
-                <div className="overflow-hidden absolute inset-0 bg-radial-[at_50%_50%] from-transparent to-black to-75%" />
+            <div className="absolute inset-0 h-screen w-full bg-[radial-gradient(circle,#ffffff_1px,transparent_1px)] bg-[size:20px_20px] opacity-20">
+                <div className="overflow-hidden absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black" />
             </div>
 
-            <div className="relative text-center">
+            <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="relative text-center"
+            >
                 <p className="font-serif text-orange-400 pb-10 uppercase tracking-wider">Page Not Found</p>
 
                 <h1 className="font-serif text-8xl md:text-[12rem] mb-5">
@@ -24,7 +32,7 @@ export default function NotFound() {
                 >
                     Back to Home
                 </Link>
-            </div>
+            </motion.div>
         </div>
     );
 }

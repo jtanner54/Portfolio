@@ -30,7 +30,7 @@ export default function Footer() {
 
                             </Link>
                         </div>
-                        <div className="dark:bg-black border rounded-full">
+                        <div className="bg-black border rounded-full">
                             <FaArrowRight color="white" className="size-4 m-2" aria-hidden="true" />
                         </div>
                     </div>
