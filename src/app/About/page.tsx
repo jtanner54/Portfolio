@@ -29,13 +29,13 @@ export default function Page() {
                             <p className="border-l-2 border-orange-400 pl-5 font-serif italic opacity-80 text-3xl">“Understanding the system matters more than memorizing the solution.”</p>
                         </div>
                         <div className="">
-                            <p className="text-2xl font-serif pb-8.5">I'm Jack Tanner, a computer science student at Rose-Hulman, driven less by lectures and more by curiosity.
-                                My education doesn't stop at the syllabus—it accelerates when something breaks, behaves unexpectedly, or begs to be understood at a deeper level.
+                            <p className="text-2xl font-serif pb-8.5">I&apos;m Jack Tanner, a computer science student at Rose-Hulman, driven less by lectures and more by curiosity.
+                                My education doesn&apos;t stop at the syllabus—it accelerates when something breaks, behaves unexpectedly, or begs to be understood at a deeper level.
                             </p>
                             <p className="text-2xl font-serif opacity-50">
-                                I believe the best engineers are self-taught long before they're credentialed.
+                                I believe the best engineers are self-taught long before they&apos;re credentialed.
                                 I learn by building, deconstructing, and iterating—treating every system as both a tool and a puzzle.
-                                Code, to me, is not just implementation; it's a way to reason about complexity, efficiency, and truth.
+                                Code, to me, is not just implementation; it&apos;s a way to reason about complexity, efficiency, and truth.
                             </p>
                         </div>
                     </div>
@@ -110,63 +110,3 @@ export default function Page() {
         </div>
     );
 }
-
-/*Animations somehow:
-
-i used uh  
- useScroll,  useTransform, "framer-motion";
-  which i sa motion/animation lib what i did was 
-
-  // We use [0.1, 0.5, 0.9] range to ensure it stays white for a bit in the middle
-  const color = useTransform(
-    scrollYProgress,
-    [0.2, 0.5, 0.8],
-    ["rgba(255,255,255,0.05)", "rgba(255,255,255,1)", "rgba(255,255,255,0.05)"],
-  ); 
-so like u see the white thing whe nu scroll it the so it ison the Y progress on the other side then i scaled the text   const scale = useTransform(
-  
- scrollYProgress,
-    [0.2, 0.5, 0.8],
-    [0.95, 1.05, 0.95],
-  ); 
-so you see it getting big  i scalled to around the shift of the y axis to then i just added it lol
-return (
-    <motion.div
-      ref={ref}
-      style={{ scale }}
-      className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-12 items-center`}
-    >
-      <div className="flex-1 text-center md:text-left">
-        <motion.span
-          style={{ color }}
-          className="text-7xl sm:text-8xl md:text-[12rem] font-serif italic block mb-4 transition-colors duration-500"
-        >
-          {item.year}
-        </motion.span>
-        <motion.h3
-          style={{
-            opacity: useTransform(
-              scrollYProgress,
-              [0.3, 0.5, 0.7],
-              [0.3, 1, 0.3],
-            ),
-          }}
-          className="text-4xl md:text-5xl font-light tracking-tight"
-        >
-          {item.event}
-        </motion.h3>
-      </div>
-      <div className="w-px h-64 bg-gradient-to-b from-[#2563eb] to-transparent hidden md:block" />
-      <div className="flex-1" />
-    </motion.div>
-  );
-}
-
- simple as that if u see i used an aditional tranfrom for the opacity bc i likd it to when scrolled down the above text obaclity fo down yeah and its just a matter of
- const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
- definign the start end and end start bc it register the other item the other event as the end of the svent above it and the start of a new event as well
- */

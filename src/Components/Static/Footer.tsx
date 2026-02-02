@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaLink, FaRegCopyright } from "react-icons/fa6";
-import Time from "../Static/Time";
+import { FaGithub, FaLinkedin, FaArrowRight } from "react-icons/fa6";
 
 export default function Footer() {
     return (
@@ -32,7 +31,7 @@ export default function Footer() {
                             </Link>
                         </div>
                         <div className="dark:bg-black border rounded-full">
-                            <FaLink color="white" className="size-4 m-2" />
+                            <FaArrowRight color="white" className="size-4 m-2" aria-hidden="true" />
                         </div>
                     </div>
                     <div className="flex gap-10 items-center">
@@ -45,31 +44,6 @@ export default function Footer() {
                             <span className="text-gray-500 font-serif uppercase">LinkedIN</span>
                         </Link>
                     </div>
-                </div>
-            </div>
-
-            <div className="mt-25 pb-7 w-full h-px border-t border-white/10" />
-
-            <div className="flex flex-col sm:flex-row gap-5 items-start w-full justify-between">
-                <div className="flex gap-20">
-                    <div className="max-w-20">
-                        <p className="font-serif italic text-white/50 text-xs">
-                            Location
-                        </p>
-                        <p className="text-xs font-serif">
-                            USA, EST
-                        </p>
-                    </div>
-                    <div className="max-w-20">
-                        <p className="font-serif italic text-white/50 text-xs">
-                            Local Time
-                        </p>
-                        <Time />
-                    </div>
-                </div>
-
-                <div className="flex items-center gap-2 font-serif text-white/50">
-                    <FaRegCopyright className="size-3" /> 2025 Jack Tanner
                 </div>
             </div>
         </footer>

@@ -6,9 +6,10 @@ type Props = {
     date: number;
     options: string[];
     num: number;
+    url: string;
 }
 
-const ProjBoxes = ({ options }: Props) => {
+const ProjBoxes = ({ options }: { options: string[] }) => {
     return (
         <div className="flex gap-5">
             {options.map((item) => (
@@ -18,34 +19,33 @@ const ProjBoxes = ({ options }: Props) => {
     );
 }
 
-export default function ProjBox(props: Props) {
+export default function ProjBox({ name, desc, date, options, num, url }: Props) {
     return (
-        <Link href="https://antiraid.xyz/" target="_blank">
+        <Link href={url} target="_blank" aria-label={`View ${name} project`}>
             <div className="flex flex-col sm:flex-col lg:flex-row lg:items-center gap-5">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-20">
                     <div className="flex gap-2">
-                        <p className="font-sans tracking-wide opacity-50">{props.date} </p>
+                        <p className="font-sans tracking-wide opacity-50">{date} </p>
                         <p className="font-sans opacity-30">—</p>
-                        <span className="tracking-widest font-serif text-orange-400"> P.{props.num}</span>
+                        <span className="tracking-widest font-serif text-orange-400"> P.{num}</span>
                     </div>
 
                     <div className="flex flex-col transition duration-300 ease-in-out transform hover:translate-x-5 hover:scale-105">
                         <div className="font-serif font-bold tracking-wider text-4xl">
-                            {props.name}
+                            {name}
                         </div>
                         <div className="opacity-50 font-serif tracking-wide uppercase">
-                            {props.desc}
+                            {desc}
                         </div>
                     </div>
                 </div>
 
                 <div className="lg:ml-auto">
                     <div>
-                        <ProjBoxes {...props} />
+                        <ProjBoxes options={options} />
                     </div>
                 </div>
             </div>
         </Link>
-
     );
 }

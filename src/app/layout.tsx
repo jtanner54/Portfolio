@@ -74,9 +74,10 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code', // Replace with actual Google Search Console verification code
-  },
+  // TODO: Add Google Search Console verification code when available
+  // verification: {
+  //   google: 'your-google-verification-code',
+  // },
 };
 
 export const viewport: Viewport = {
