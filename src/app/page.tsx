@@ -127,7 +127,7 @@ export default function Page() {
                     </h2>
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-2 bg-white/5 border border-white/10 rounded-2xl mx-auto max-w-4xl px-4 py-3">
+                <div className="flex flex-wrap justify-center gap-2 bg-white/5 border border-white/10 rounded-2xl py-3">
                     {techCategories.map((category) => (
                         <button
                             key={category}
@@ -136,7 +136,7 @@ export default function Page() {
                             className={clsx(
                                 "px-4 py-2 text-base sm:text-2xl font-serif tracking-wider rounded-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105",
                                 activeCategory === category
-                                    ? "bg-linear-to-r from-orange-400 via-yellow-500 to-red-700"
+                                    ? "bg-linear-to-r to-orange-700"
                                     : "border-white/5 bg-white/5 text-white hover:bg-white/5"
                             )}
                         >
@@ -145,8 +145,8 @@ export default function Page() {
                     ))}
                 </div>
 
-                <div className="flex flex-col items-center p-5">
-                    <div className="grid px-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
+                <div className="flex flex-col items-center">
+                    <div className="grid px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
                         {visibleTech.map(tech => (
                             <TechGroup key={tech.name} {...tech} />
                         ))}

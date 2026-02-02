@@ -14,7 +14,7 @@ type Props = {
 export default function NavBoxes({ icon: Icon, text, href }: Props) {
     const pathname = usePathname();
 
-    const isActive = pathname === href || (href.includes('#') && pathname === '/');
+    const isActive = pathname === href;
 
     return (
         <li>
