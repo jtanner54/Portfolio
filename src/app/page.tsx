@@ -33,7 +33,7 @@ export default function Page() {
                 </div>
 
                 <div className="relative h-[75vh] flex items-center justify-center px-5">
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -72,7 +72,7 @@ export default function Page() {
                 </div>
 
                 <div className="relative px-5 py-20">
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: false }}
@@ -98,16 +98,15 @@ export default function Page() {
 
             <section id="about" className="relative dark:bg-black py-40 px-5 pt-59 md:pt-2">
                 <div className="absolute inset-0 w-full h-full">
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0.2 }}
                         animate={{ opacity: [0.2, 0.4, 0.2] }}
                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                        className="absolute inset-0 w-full h-full bg-[radial-gradient(circle,#ffffff_1px,transparent_1px)] bg-[size:20px_20px]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
                 </div>
                 <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-20 items-start px-6 max-w-6xl mx-auto">
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: false }}
@@ -132,7 +131,7 @@ export default function Page() {
                             </p>
                         </div>
                     </motion.div>
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: false }}
@@ -162,7 +161,7 @@ export default function Page() {
             </section>
 
             <section id="tech" className="dark:bg-black">
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false }}
@@ -247,23 +246,23 @@ export default function Page() {
                 </div>
 
                 <div className="flex flex-col items-center">
-                    <motion.div 
+                    <motion.div
                         layout
                         className="grid px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8"
                     >
                         <AnimatePresence mode="popLayout">
-                        {visibleTech.map(tech => (
-                            <motion.div
-                                key={tech.name}
-                                layout
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0, scale: 0.9 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <TechGroup {...tech} />
-                            </motion.div>
-                        ))}
+                            {visibleTech.map(tech => (
+                                <motion.div
+                                    key={tech.name}
+                                    layout
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    exit={{ opacity: 0, scale: 0.9 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <TechGroup {...tech} />
+                                </motion.div>
+                            ))}
                         </AnimatePresence>
                     </motion.div>
                 </div>
@@ -271,7 +270,7 @@ export default function Page() {
 
             <section className="dark:bg-black py-20 px-6">
                 <div className="w-full h-px border-t border-white/10 pb-10" />
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: false }}
@@ -281,7 +280,7 @@ export default function Page() {
                     <span className="font-serif uppercase opacity-50 ">continuous evolution & learning</span>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false }}
